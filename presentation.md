@@ -30,7 +30,7 @@ layout: false
 ---
 ## [Brain Imaging Data Structure](http://bids.neuroimaging.io) (or BIDS)
 
-[//]: #  <img src="assets/data2bids.jpg" width="100%" />
+
 *Gorgolewski, K. J. et al. 2016*
 ???
 
