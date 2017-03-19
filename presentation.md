@@ -30,7 +30,16 @@ layout: false
 ---
 ## [Brain Imaging Data Structure](http://bids.neuroimaging.io) (or BIDS)
 
-[//]: #  <img src="assets/data2bids.jpg" width="100%" />
+   
+I believe that all the previously proposed solutions (apart from those that require specific implementations) result in the comments being included in the output HTML, even if they are not displayed.
+
+If you want a comment that is strictly for yourself (readers of the converted document should not be able to see it, even with "view source") you could (ab)use the link labels (for use with reference style links) that are available in the core Markdown specification:
+
+http://daringfireball.net/projects/markdown/syntax#link
+
+That is:
+
+[comment]: <>  <img src="assets/data2bids.jpg" width="100%" />
 *Gorgolewski, K. J. et al. 2016*
 ???
 
