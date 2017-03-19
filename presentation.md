@@ -16,8 +16,8 @@ layout: false
     - Each project in a lab depends on complex software environments
        
         - operating system
-	- drivers
-	- software dependencies: Python/MATLAB/R + libraries
+        - drivers
+        - software dependencies: Python/MATLAB/R + libraries
 
 --
 
