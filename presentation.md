@@ -10,7 +10,7 @@ layout: false
 --
 
 - Science Reproducibility
---
+
   - Each project in a lab depends on complex software environments
     - operating system
 --
