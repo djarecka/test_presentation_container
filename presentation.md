@@ -2,16 +2,18 @@ name: inverse
 layout: true
 class: center, middle, inverse
 ---
-# Data Standards (BIDS) and conversion
-### mathiasg@mit.edu
+# Using reproducible container based environments
+
 ---
 layout: false
-### Neuroimaging data is BIG
-
-- MRI as a research tool has been used for over two decades.
-
+### Why do we need containers?
 --
 
+- Science Reproducibility
+--
+  - Each project in a lab depends on complex software environments
+    - operating system
+--
 - Different types of MRI scans within studies
   - Anatomical
   - Diffusion
