@@ -30,17 +30,7 @@ layout: false
 ---
 ## [Brain Imaging Data Structure](http://bids.neuroimaging.io) (or BIDS)
 
-   
-I believe that all the previously proposed solutions (apart from those that require specific implementations) result in the comments being included in the output HTML, even if they are not displayed.
 
-If you want a comment that is strictly for yourself (readers of the converted document should not be able to see it, even with "view source") you could (ab)use the link labels (for use with reference style links) that are available in the core Markdown specification:
-
-http://daringfireball.net/projects/markdown/syntax#link
-
-That is:
-
-[comment]: <>  <img src="assets/data2bids.jpg" width="100%" />
-*Gorgolewski, K. J. et al. 2016*
 ???
 
 who came up with this? over 5000 researchers.
@@ -60,7 +50,7 @@ run validator showing warnings/errors
 ---
 ### Now what?
 
-<img src="assets/bids-apps.png" width="100%" />
+
 
 ???
 
@@ -77,8 +67,7 @@ over 20 apps!
 - [fMRIprep](https://github.com/poldracklab/fmriprep)
 --
 
-<object type="image/svg+xml" data="assets/t12mni.svg" width="100%">
-</object>
+
 
 ???
 
@@ -90,7 +79,6 @@ ALL RUN BECAUSE OF FACILITATION BY BIDS STRUCTURE
 
 - Convert current files or..
 --
-<img src="assets/heudiconv.png" width="100%" />
 
 --
 
@@ -120,7 +108,6 @@ Or if you have docker: `docker pull nipy/heudiconv`
     - In there, you can see a `dicominfo.txt` - we'll be using the information here to convert to a file structure (BIDS)
 --
 
-  <img src="assets/dicominfo.png" width="100%" />
 ---
 ### Put the guts in your heuristic!
   - For this example, we want to extract T1, diffusion, and the face matching task
