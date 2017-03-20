@@ -70,44 +70,43 @@ Universal Install Script from xkcd: The failures usually don’t hurt anything..
 - The details differ (and matter depending on application)
 
 ---
-### Virtual Machines vs Container
+### Virtual Machines vs Container #TODO
 
 <img src="img/Virtual_Machine_vs_Docker_Container.png" width="80%" />
 ---
-### BIDS-Apps
+### Virtual Machines vs Container #TODO
 
-- Each app self-contained inside own docker image
-  - no hassle of installing/updating new versions
---
-
-- [MRIQC](https://github.com/poldracklab/mriqc)
-
-- [fMRIprep](https://github.com/poldracklab/fmriprep)
---
-
-
-
-???
-
-mriqc - runs quality control measures on both structural and functional across either individual or group - outputs reports
-fMRIprep - runs basic preprocessing with reports generated outlining how import steps affected the data
-ALL RUN BECAUSE OF FACILITATION BY BIDS STRUCTURE
+<img src="img/Virtual_Machine_vs_Docker_Container.png" width="80%" />
 ---
-## Easiest way to convert to BIDS?
+### Docker
+- leading software container platform
+- an open-source project
+- bundle libraries and required settings only (not a full operating system)
+- more lightweight to deploy and faster to start up than VM
 
-- Convert current files or..
 --
+- testing your Docker installation:
+```bash
+$ docker run hello-world
+```
+---
 
+## Docker
+
+- Using existing images
 --
-
-[Heudiconv](https://github.com/nipy/heudiconv)
-
-    - `Python 2`
-    - `Nipype`
-    - `dcmstack`
-    - `dcm2niix`
-
-Or if you have docker: `docker pull nipy/heudiconv`
+```bash
+$ docker pull busybox
+$ docker images
+$ docker run busybox
+$ docker run busybox echo ``hello from busybox''
+$ docker run -it busybox sh
+$ docker ps
+$ docker rm
+#or                                                                                                                      
+$ docker run -it --rm busybox
+$ docker run -it --rm -v YourDirectory:/src busybox
+```
 ---
 ### Sample conversion
 
