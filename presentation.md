@@ -40,9 +40,10 @@ layout: false
 ## Why do we need containers?
 
 - Freedom to experiment!
+
 --
 
-<img src="img/universal_install_script_2x.png" width="60%" />
+<img src="img/universal_install_script_2x.png" width="40%" />
 Universal Install Script from xkcd: The failures usually don’t hurt anything... Usually all your old programs work...
 --
 
