@@ -95,6 +95,7 @@ $ docker run hello-world
 
 - Using existing images
 --
+
 ```bash
 $ docker pull busybox
 $ docker images
@@ -103,10 +104,10 @@ $ docker run busybox echo ``hello from busybox''
 $ docker run -it busybox sh
 $ docker ps
 $ docker rm
-#or                                                                                                                      
 $ docker run -it --rm busybox
 $ docker run -it --rm -v YourDirectory:/src busybox
 ```
+
 ---
 ### Sample conversion
 
