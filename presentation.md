@@ -48,7 +48,7 @@ layout: false
 
 - Freedom to experiment!
 --
-![](img/universal_install_script_2x.png)
+<img src="img/universal_install_script_2x.png" width="80%" />
 
 
 
