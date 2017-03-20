@@ -7,7 +7,6 @@ class: center, middle, inverse
 ---
 layout: false
 ### Why do we need containers?
---
 
 - Science Reproducibility
 
@@ -28,21 +27,30 @@ layout: false
         - etc.
 
 ---
-### Managing this data
-
-- Lack of data storage/organization standard in neuroimaging community.
-
+### Why do we need containers?
 --
 
-- This can lead to problems:
-  - harder to share data (even in same lab)
-  - separate tracking of specific metadata when processing dataset
-  - no way to automatically validate completeness of dataset
+- Collaboration with your colleagues
+--
+
+    - Sharing your code or using a repository might not be enough
+--
+
+    - We try to avoid
+
+        - well, I forgot to mention that you have to use Clang, gcc never worked for me... 
+        - don’t see any reason why it shouldn’t work on Windows... (I actually have no idea about Windows, but won’t say it...)
+	- it works on my computer...
+	- etc.
+
 ---
-## [Brain Imaging Data Structure](http://bids.neuroimaging.io) (or BIDS)
+## Why do we need containers?
+
+- Freedom to experiment!
+--
+![](img/universal_install_script_2x.png)
 
 
-???
 
 who came up with this? over 5000 researchers.
 ---
