@@ -131,7 +131,7 @@ $ docker build -t fslR .
 
 - Running your new container:
 
-```
+```bash
 $ docker run -ti --rm fslR
 ```
 
