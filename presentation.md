@@ -160,61 +160,16 @@ nipype.test()
 ```
 
 ---
-### Put the guts in your heuristic!
-  - For this example, we want to extract T1, diffusion, and the face matching task
+### Singularity
 
---
+- a container solution created for scientific and application driven workloads
+- supports existing and traditional HPC resources
+- a user inside a Singularity container is the same user as outside the container
+- but you can use Vagrant to create a container (you have root privileges on your VM!)
+- can run existing Docker containers
+- [Satra's presentation](http://satra.cogitatum.org/om-images/}{Singularity on Openmind)
+- [other tutorials](http://singularity.lbl.gov/tutorials) 
 
-  - First, define the keys
-  ```python
-  t1 = create_key('anat/sub-{subject}_T1w')
-  dwi = create_key('dwi/sub-{subject}_acq-{acq}_dwi')
-  facematch=create_key('func/sub-{subject}_task-facematch_run-{item:02d}_bold')
-  info = {t1:[], dwi:[], facematch:[]}
-  ```
---
-
-  - And now for each key, look at the `dicominfo.txt` and set a unique criteria that only that series will meet. For example:
---
-
-    ```python
-    for idx, s in enumerate(seqinfo):
-        x,y,sl,nt = (s[6], s[7], s[8], s[9])
-        if (sl == 176) and (nt ==1) and ('T1_MPRAGE' in s[12]):
-            info[t1].append(s[2])
-    ```
----
-### Test it out!
-  - After setting rules for each key, re-run `heudiconv` with some added parameters:
-
---
-
-    - `-c dcm2niix` - this sets the converter that will be used (dcm2niix is recommended)
-    - `-f my_heuristic.py` - this tells heudiconv to look for the specific keys you defined when converting
-    - `-b` - this flag tells `dcm2niix` to output BIDS metadata `json` files.
---
-
-  - Something missing? Double check your `heuristic.py` and `dicominfo.txt`!
----
-### Is it BIDS yet?
-  - 90% there, but (currently) you will have to fix any errors from the validator.
-
-<h2>BUT</h2>
-
-  - A change to `heudiconv` will be coming soon that fixes most, if not all, of these problems.
----
-name: inverse
-layout: true
-class: center, inverse
----
-# <u>Thanks</u>
-
-
-<h3> Satra Ghosh </h3>
-<br>
-<h3> Chris Gorgolewski </h3>
-<br>
-<h3> Heudiconv contributors </h3>
 ---
 name: inverse
 layout: true
