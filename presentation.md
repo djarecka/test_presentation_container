@@ -3,7 +3,6 @@ layout: true
 class: center, middle, inverse
 ---
 # Using reproducible container based environments
-
 ---
 layout: false
 ### Why do we need containers?
@@ -17,7 +16,6 @@ layout: false
         - operating system
         - drivers
         - software dependencies: Python/MATLAB/R + libraries
-
 --
 
     - We try to avoid
@@ -25,7 +23,6 @@ layout: false
         - the computer I used was shut down a year ago, can’t rerun the results from my publication...
         - the analysis were run by my student, have no idea where and how...
         - etc.
-
 ---
 ### Why do we need containers?
 --
@@ -42,13 +39,12 @@ layout: false
         - don’t see any reason why it shouldn’t work on Windows... (I actually have no idea about Windows, but won’t say it...)
 	- it works on my computer...
 	- etc.
-
 ---
 ## Why do we need containers?
 
 - Freedom to experiment!
 --
-<img src="img/universal_install_script_2x.png" width="80%" />
+<img src="img/universal_install_script_2x.png" width="60%" />
 
 
 
