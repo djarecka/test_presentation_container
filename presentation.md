@@ -41,32 +41,38 @@ layout: false
 
 - Freedom to experiment!
 --
+
 <img src="img/universal_install_script_2x.png" width="60%" />
+Universal Install Script from xkcd: The failures usually don’t hurt anything... Usually all your old programs work...
+--
 
-
-
-who came up with this? over 5000 researchers.
+    - We try to avoid
+        -I just want to Undo the last five hours of my life...
 ---
-### So what do I need?
+### Virtual Machines and Container Technologies
 
-- Full specification can be found [online](http://bids.neuroimaging.io/bids_spec1.0.0.pdf)
+- Main idea: isolate the computing environment
+    - Allow regenerating computing environments
+    - Allow sharing your computing environments
 
 --
 
-- [In-browser validator](http://incf.github.io/bids-validator) can easily check for you!
-  - For HPC - can also validate through command line
+- Two types:
+    - Virtual Machines
+        - Virtualbox
+	- VMware
+	- AWS, Google Compute, ...
+    - Containers (?)
+        - Docker
+	- Singularity
+--
 
-???
+- The details differ (and matter depending on application)
 
-run validator showing warnings/errors
 ---
-### Now what?
+### Virtual Machines vs Container
 
-
-
-???
-
-over 20 apps!
+<img src="img/Virtual_Machine_vs_Docker_Container.png" width="80%" />
 ---
 ### BIDS-Apps
 
