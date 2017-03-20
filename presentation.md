@@ -136,12 +136,28 @@ $ docker run -ti --rm fslR
 ```
 
 ---
-### Check the generated info!
+### Docker and Nipype
 
-  - Once run, you should now have a directory with your subject, and a sub-directory `info`.
+- Using Nipype official Docker image
 
-    - In there, you can see a `dicominfo.txt` - we'll be using the information here to convert to a file structure (BIDS)
---
+```bash
+$ docker images
+$ docker pull nipype/nipype
+$ docker run -it --rm nipype/nipype
+```
+
+- Within the nipype container
+
+```bash
+python
+```
+
+- Within Python interpreter:
+
+```python
+import nipype
+nipype.test()
+```
 
 ---
 ### Put the guts in your heuristic!
