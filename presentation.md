@@ -22,14 +22,13 @@ layout: false
 ---
 ### Why do we need containers?
 --
-
 - Collaboration with your colleagues
 --
     - Sharing your code or using a repository might not be enough
 --
     - We try to avoid
         - well, I forgot to mention that you have to use Clang, gcc never worked for me... 
-        - don’t see any reason why it shouldn’t work on Windows... (I actually have no idea about Windows, but won’t say it...)
+        - don’t see any reason why it shouldn’t work on Windows...(I actually have no idea about Windows, but won’t say it...)
 	- it works on my computer...
 	- etc.
 ---
