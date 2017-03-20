@@ -109,15 +109,32 @@ $ docker run -it --rm -v YourDirectory:/src busybox
 ```
 
 ---
-### Sample conversion
+### Docker: Installing software with Dockerfile
 
-  - Start out running heudiconv without any converter, just passing in dicoms.
-  ```
-  heudiconv -d $DICOMPATH/%s/*.dcm -f convertall.py -c none -s $YOUR_SUBJECT
-  ```
+- Dockerfile content:
+
+```
+# TODO: update image (Satra)
+FROM bids/base_fsl
+RUN apt-get update -y && apt-get install -y r-base
+```
+
 --
 
-    - Note: we are not designating a converter yet, but we'll be using the `convertall.py` found in the sample heuristics.
+- Building a new container:
+
+```bash
+$ docker build -t fslR .
+```
+
+--
+
+- Running your new container:
+
+```
+$ docker run -ti --rm fslR
+```
+
 ---
 ### Check the generated info!
 
