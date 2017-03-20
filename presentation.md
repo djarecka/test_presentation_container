@@ -113,7 +113,7 @@ $ docker run -it --rm -v YourDirectory:/src busybox
 
 - Dockerfile content:
 
-```
+```bash
 # TODO: update image (Satra)
 FROM bids/base_fsl
 RUN apt-get update -y && apt-get install -y r-base
