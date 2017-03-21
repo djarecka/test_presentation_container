@@ -7,7 +7,7 @@ class: center, middle, inverse
 layout: false
 ### Why do we need containers?
 
-### <span style="color:blue">Science Reproducibility</span>
+### <span style="color:#FAF5FF">Science Reproducibility</span>
 --
 
   - Each project in a lab depends on complex software environments
