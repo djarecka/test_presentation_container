@@ -193,7 +193,7 @@ layout: false
   $ git
   $ emacs
   ```
-  ---
+---
 ### <span style="color:purple">Docker: Installing software with Dockerfile</span>
 
 - More about the Dockerfile syntax you can find [here](https://docs.docker.com/engine/reference/builder/#from)
@@ -282,9 +282,10 @@ TODO: wait for notebooks that will be used during workshop
   # this will also install all the associated anaconda packaged libraries
   $ conda create -n python3.6_anaconda python=3.6 anaconda
   ```
-  - activating the environment
+  - activating and deactivating the environment
   ```bash
   $ source activate python3.6_test
+  $ source deactivate python3.6_test
   ```
 
   - installing additional packages
@@ -292,10 +293,6 @@ TODO: wait for notebooks that will be used during workshop
   $ conda install -n python3.6_test numpy
   ```
 
-  - deactivating the environment
-  ``` bash
-  $ source deactivate python3.6_test
-  ```
 ---
 name: inverse
 layout: true
