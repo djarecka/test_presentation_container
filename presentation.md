@@ -46,7 +46,7 @@ layout: false
 - Universal Install Script from xkcd: *The failures usually don’t hurt anything...*
  And usually all your old programs work...
 
-<img src="img/universal_install_script_2x.png" width="40%" />
+<img src="img/universal_install_script_2x.png" width="35%" />
 --
 
 - We try to avoid
@@ -103,7 +103,9 @@ layout: false
 - leading software container platform
 - an open-source project
 - **it runs now on Mac OS X and Windows (you don't have to run VM!)**
+
 --
+
 #### Testing your Docker installation:
   ```bash
   $ docker run hello-world
