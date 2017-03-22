@@ -265,12 +265,10 @@ TODO: wait for notebooks that will be used during workshop
 
 - Conda:
   - a package manager and an environment manager
-
 --
-
 - Using Conda for Python environments
   - if you don't have `conda` you can use `continuumio/miniconda` container
-  - creating a new Python environment
+
   ```bash
   # updating conda
   $ conda update conda
