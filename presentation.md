@@ -29,7 +29,7 @@ layout: false
 ### Collaboration with your colleagues
 --
 
-  - Sharing your code or using a repository might not be enough
+- Sharing your code or using a repository might not be enough
 --
 
 - We try to avoid
@@ -145,9 +145,12 @@ layout: false
   $ docker run -it --rm -v LocalDirectory:/src ubuntu
   # read only mode
   $ docker run -it --rm -v LocalDirectory:/src:ro ubuntu
+  # you can mount multiple data volumes
+  # the directory `temp` doesn't have to exist and will be created
+  $ docker run -it --rm -v LocalDirectory:/src -v TempLocalDirectory:/temp ubuntu
   ```
 ---
-### Docker: Installing software with Dockerfile
+## <span style="color:purple">Docker: Installing software with Dockerfile</span>
 
 - Create a new directory
 
@@ -187,7 +190,7 @@ layout: false
 
 - Example of Dockerfile to run Nipyp wokflow from [Docker Hub](https://hub.docker.com/r/miykael/nipype_level0/~/dockerfile/)
 ---
-### Docker and Nipype
+## <span style="color:purple">Docker and Nipype</span>
 
 - Using Nipype official Docker image
 
@@ -195,7 +198,7 @@ layout: false
   $ docker images
   # only if you haven't done it already
   $ docker pull miykael/nipype_level3
-  $ docker run -it --rm miykael/nipype_level3
+  $ docker run -it --rm miykael/nipype_level3 bash
   ```
 
 - Within the nipype container
