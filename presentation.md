@@ -281,11 +281,19 @@ TODO: wait for notebooks that will be used during workshop
   $ $ conda create -n python3.6_test python=3.6
   # this will also install all the associated anaconda packaged libraries
   $ conda create -n python3.6_anaconda python=3.6 anaconda
-  # activating the environment
+  ```
+  - activating the environment
+  ```bash
   $ source activate python3.6_test
-  # installing additional packages
+  ```
+
+  - installing additional packages
+  ```bash
   $ conda install -n python3.6_test numpy
-  # deactivating the environment
+  ```
+
+  - deactivating the environment
+  ``` bash
   $ source deactivate python3.6_test
   ```
 ---
