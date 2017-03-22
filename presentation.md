@@ -90,7 +90,7 @@ layout: false
 
   <img src="img/Containers-vs-Virtual-Machines.jpg" width="80%" />
 
---
+
 
    **Containers**
   - share the host system’s kernel with other containers
@@ -112,6 +112,8 @@ layout: false
   ```
 ---
 ### <span style="color:purple">Docker: Using existing images</span>
+
+- [Docker Hub](https://hub.docker.com/) -- repositories to share Docker images
 
 - managing images:
   ```bash
@@ -191,6 +193,8 @@ layout: false
   $ git
   $ emacs
   ```
+  ---
+### <span style="color:purple">Docker: Installing software with Dockerfile</span>
 
 - More about the Dockerfile syntax you can find [here](https://docs.docker.com/engine/reference/builder/#from)
 
@@ -238,7 +242,7 @@ TODO: wait for notebooks that will be used during workshop
 ### <span style="color:purple">Docker and Singularity</span>
 
 - Docker:
-  - docker can escalate privileges, so you can treated effectively as a root on the host system
+  - docker can escalate privileges, so you can be effectively treated as a root on the host system
   - this is usually  not supported by HPC centers!
 
 --
@@ -248,10 +252,41 @@ TODO: wait for notebooks that will be used during workshop
   - supports existing and traditional HPC resources
   - a user inside a Singularity container is the same user as outside the container
   - but you can use Vagrant to create a container (you have root privileges on your VM!)
-  - can run existing Docker containers
-  - [Satra's presentation](http://satra.cogitatum.org/om-images/Singularity on Openmind) TODO
+  - can run (and modify!) existing Docker containers
+  - running VM is required on OSX
+  - [Satra's presentation](http://satra.cogitatum.org/om-images/)
   - [other tutorials](http://singularity.lbl.gov/tutorials)
 
+---
+### <span style="color:purple">Virtual Python environments and Conda</span>
+- Virtual environments
+  - keep the dependencies required by different projects in separate places
+  - allows to work with specific versions of libraries or Python itself without affecting other Python projects
+
+- Conda:
+  - a package manager and an environment manager
+
+--
+
+- Using Conda for Python environments
+  - if you don't have `conda` you can use `continuumio/miniconda` container
+  - creating a new Python environment
+  ```bash
+  # updating conda
+  $ conda update conda
+  # listing available Python version
+  $ conda search "^python$"
+  # creating a Python 3.6 environment
+  $ $ conda create -n python3.6_test python=3.6
+  # this will also install all the associated anaconda packaged libraries
+  $ conda create -n python3.6_anaconda python=3.6 anaconda
+  # activating the environment
+  $ source activate python3.6_test
+  # installing additional packages
+  $ conda install -n python3.6_test numpy
+  # deactivating the environment
+  $ source deactivate python3.6_test
+  ```
 ---
 name: inverse
 layout: true
