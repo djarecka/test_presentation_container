@@ -43,7 +43,8 @@ layout: false
 ### Freedom to experiment!
 
 --
-- Universal Install Script from xkcd: *The failures usually don’t hurt anything...* \
+- Universal Install Script from xkcd: *The failures usually don’t hurt anything...*
+
  And usually all your old programs work...
 
 <img src="img/universal_install_script_2x.png" width="40%" />
