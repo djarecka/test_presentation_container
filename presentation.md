@@ -48,6 +48,7 @@ layout: false
 
 <img src="img/universal_install_script_2x.png" width="40%" />
 --
+
 - We try to avoid
   - I just want to Undo the last five hours of my life...
 ---
@@ -62,11 +63,11 @@ layout: false
 - Two main types:
   - Virtual Machines:
     - Virtualbox
-  	- VMware
-  	- AWS, Google Compute, ...
+    - VMware
+    - AWS, Google Compute, ...
   - Containers:
     - Docker
-  	- Singularity
+    - Singularity
 
 --
 
@@ -76,6 +77,7 @@ layout: false
 ### <span style="color:purple">Virtual Machines vs Containers</span>
 
 <img src="img/Containers-vs-Virtual-Machines.jpg" width="80%" />
+
 --
 
  **Virtual Machines**
@@ -87,6 +89,7 @@ layout: false
 ### <span style="color:purple">Virtual Machines vs Containers</span>
 
   <img src="img/Containers-vs-Virtual-Machines.jpg" width="80%" />
+
 --
 
    **Containers**
@@ -187,8 +190,6 @@ layout: false
   $ emacs
   ```
 
---
-
 - More about the Dockerfile syntax you can find [here](https://docs.docker.com/engine/reference/builder/#from)
 
 - Example of Dockerfile to run Nipyp wokflow from [Docker Hub](https://hub.docker.com/r/miykael/nipype_level0/~/dockerfile/)
@@ -220,24 +221,34 @@ layout: false
 
 ### <span style="color:purple">Docker: running jupyter</span>
 
-- Using Jupyter notebook with Docker container\
-TODO sprawdzic opcje -d
+- Using Jupyter notebook with Docker container
+`-p` option: publishing ports
   ```bash
-  $ docker run -it --rm -p 9999:8888 -v /home/vik/notebooks:/home/ds/notebooks(TODO) miykael/nipype_level3
+  # you can use various host port number
+  $ docker run -it --rm -p 9999:8888 miykael/nipype_level3
   ```
+--
+
+- Running local notebooks
+TODO: wait for notebooks that will be used during workshop
+
+---
+### <span style="color:purple">Docker and Singularity</span>
+
+- Docker:
+  - docker can escalate privileges, so you can treated effectively as a root on the host system
+  - this is usually  not supported by HPC centers!
 
 --
 
----
-### <span style="color:purple">Singularity</span>
-
-- a container solution created for scientific and application driven workloads
-- supports existing and traditional HPC resources
-- a user inside a Singularity container is the same user as outside the container
-- but you can use Vagrant to create a container (you have root privileges on your VM!)
-- can run existing Docker containers
-- [Satra's presentation](http://satra.cogitatum.org/om-images/Singularity on Openmind) TODO
-- [other tutorials](http://singularity.lbl.gov/tutorials)
+- Singularity:
+  - a container solution created for scientific and application driven workloads
+  - supports existing and traditional HPC resources
+  - a user inside a Singularity container is the same user as outside the container
+  - but you can use Vagrant to create a container (you have root privileges on your VM!)
+  - can run existing Docker containers
+  - [Satra's presentation](http://satra.cogitatum.org/om-images/Singularity on Openmind) TODO
+  - [other tutorials](http://singularity.lbl.gov/tutorials)
 
 ---
 name: inverse
