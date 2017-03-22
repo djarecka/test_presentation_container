@@ -5,7 +5,7 @@ class: center, middle, inverse
 # Using reproducible container based environments
 ---
 layout: false
-## <span style="color:purple">Why do we need containers?</span>
+### <span style="color:purple">Why do we need containers?</span>
 
 ### Science Reproducibility
 --
@@ -23,7 +23,7 @@ layout: false
     - the analysis were run by my student, have no idea where and how...
     - etc.
 ---
-## <span style="color:purple"> Why do we need containers?</span>
+### <span style="color:purple"> Why do we need containers?</span>
 --
 
 ### Collaboration with your colleagues
@@ -38,22 +38,20 @@ layout: false
   - it works on my computer...
   - etc.
 ---
-##<span style="color:purple">Why do we need containers?</span>
+###<span style="color:purple">Why do we need containers?</span>
 
 ### Freedom to experiment!
 
 --
 - Universal Install Script from xkcd: *The failures usually don’t hurt anything...*
-
  And usually all your old programs work...
 
 <img src="img/universal_install_script_2x.png" width="40%" />
 --
-
 - We try to avoid
   - I just want to Undo the last five hours of my life...
 ---
-## <span style="color:purple">Virtual Machines and Container Technologies</span>
+### <span style="color:purple">Virtual Machines and Container Technologies</span>
 
 - Main idea -- isolate the computing environment
     - Allow regenerating computing environments
@@ -79,16 +77,18 @@ layout: false
 
 <img src="img/Containers-vs-Virtual-Machines.jpg" width="80%" />
 --
+
  **Virtual Machines**
   - emulate whole computer system (software+hardware)
   - run on top of a physical machine using a *hypervisor*
   - *hypervisor* shares and manages hardware of the host and executes the guest operating system
   - guest machines are completely isolated and have dedicated resources
-  ---
-  ### <span style="color:purple">Virtual Machines vs Containers</span>
+---
+### <span style="color:purple">Virtual Machines vs Containers</span>
 
   <img src="img/Containers-vs-Virtual-Machines.jpg" width="80%" />
-  --
+--
+
    **Containers**
   - share the host system’s kernel with other containers
   - each container gets its own isolated user space
@@ -96,18 +96,17 @@ layout: false
   - **containers are very lightweight and fast to start up**
 
 ---
-##<span style="color:purple">Docker</span>
+###<span style="color:purple">Docker</span>
 - leading software container platform
 - an open-source project
 - **it runs now on Mac OS X and Windows (you don't have to run VM!)**
 --
-##### testing your Docker installation:
+#### Testing your Docker installation:
   ```bash
   $ docker run hello-world
   ```
 ---
-
-## <span style="color:purple">Docker: Using existing images</span>
+### <span style="color:purple">Docker: Using existing images</span>
 
 - managing images:
   ```bash
@@ -126,6 +125,9 @@ layout: false
   ```bash
   $ docker run -it ubuntu bash
   ```
+---
+### <span style="color:purple">Docker: Using existing images</span>
+
 - managing containers
   ```bash
   # list currently running containers
@@ -151,7 +153,7 @@ layout: false
   $ docker run -it --rm -v LocalDirectory:/src -v TempLocalDirectory:/temp ubuntu
   ```
 ---
-## <span style="color:purple">Docker: Installing software with Dockerfile</span>
+### <span style="color:purple">Docker: Installing software with Dockerfile</span>
 
 - Create a new directory
 
@@ -191,7 +193,7 @@ layout: false
 
 - Example of Dockerfile to run Nipyp wokflow from [Docker Hub](https://hub.docker.com/r/miykael/nipype_level0/~/dockerfile/)
 ---
-## <span style="color:purple">Docker and Nipype</span>
+### <span style="color:purple">Docker and Nipype</span>
 
 - Using Nipype official Docker image
 
@@ -216,7 +218,7 @@ layout: false
   ```
 ---
 
-## Docker
+### <span style="color:purple">Docker: running jupyter</span>
 
 - Using Jupyter notebook with Docker container\
 TODO sprawdzic opcje -d
@@ -227,7 +229,7 @@ TODO sprawdzic opcje -d
 --
 
 ---
-### Singularity
+### <span style="color:purple">Singularity</span>
 
 - a container solution created for scientific and application driven workloads
 - supports existing and traditional HPC resources
