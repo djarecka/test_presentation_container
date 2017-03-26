@@ -325,10 +325,10 @@ layout: false
 
 - Running local notebooks
 
-```bash
-# you can use various host port number
-$ docker run -it --rm -p 9999:8888 -v LocalDirectory:/src nipype/workshops:latest-base jupyter-lab
-```
+  ```bash
+  # you can use various host port number
+  $ docker run -it --rm -p 9999:8888 -v LocalDirectory:/src nipype/workshops:latest-base jupyter-lab
+  ```
 
 ---
 ### <span style="color:purple">Docker and Singularity</span>
