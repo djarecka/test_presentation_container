@@ -129,7 +129,7 @@ layout: false
 
       - Virtualbox
       - VMware
-      - AWS, Google Compute, ...
+      - AWS, Google Compute Engine, ...
 
   - Containers:
 
@@ -176,6 +176,14 @@ layout: false
   ```bash
   $ docker run hello-world
   ```
+--
+
+Interesting tutorials and blog posts:
+
+- [A beginner friendly intro to VMs and Docker](https://medium.freecodecamp.com/a-beginner-friendly-introduction-to-containers-vms-and-docker-79a9e3e119b#.3giab6wvo)
+- [Intro to Docker from Neurohackweek](https://neurohackweek.github.io/docker-for-scientists/)
+- [Understanding Images](https://code.tutsplus.com/tutorials/docker-from-the-ground-up-understanding-images--cms-28165)
+
 ---
 
 name: inverse
