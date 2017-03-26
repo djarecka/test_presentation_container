@@ -82,12 +82,14 @@ layout: false
 --
 
 - Sharing your code or using a repository might not be enough
+&nbsp;
+
 --
 
 - We try to avoid
   - well, I forgot to mention that you have to use Clang, gcc never worked for me...
   - don’t see any reason why it shouldn’t work on Windows...(I actually have no idea about Windows, but won’t say it...)
-  - it works on my computer...
+  - **it works on my computer...**
   - etc.
 ---
 ###<span style="color:purple">Why do we need containers?</span>
@@ -102,7 +104,7 @@ layout: false
 --
 
 - We try to avoid
-  - I just want to Undo the last five hours of my life...
+  - I just want to undo the last five hours of my life...
 
 ---
 name: inverse
@@ -125,14 +127,14 @@ layout: false
 
   - Virtual Machines:
 
-    - Virtualbox
-    - VMware
-    - AWS, Google Compute, ...
+      - Virtualbox
+      - VMware
+      - AWS, Google Compute, ...
 
   - Containers:
 
-    - Docker
-    - Singularity
+      - Docker
+      - Singularity
 
 --
 
