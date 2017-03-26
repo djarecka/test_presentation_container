@@ -206,6 +206,8 @@ layout: false
   $ docker images
   # remove images
   $ docker rmi <image_id>
+  # remove dangling images
+  docker rmi $(docker images | grep "^<none>" | awk '{print $3}')
   ```
 
 - running containers
