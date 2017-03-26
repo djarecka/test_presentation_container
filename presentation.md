@@ -178,6 +178,8 @@ layout: false
   ```
 --
 
+&nbsp;
+
 Interesting tutorials and blog posts:
 
 - [A beginner friendly intro to VMs and Docker](https://medium.freecodecamp.com/a-beginner-friendly-introduction-to-containers-vms-and-docker-79a9e3e119b#.3giab6wvo)
@@ -315,7 +317,7 @@ layout: false
 `-p` option: publishing ports
   ```bash
   # you can use various host port number
-  $ docker run -it --rm -p 9999:8888 -v LocalDirectory:/src nipype/workshops:latest-base jupyter-lab
+  $ docker run -it --rm -p 9999:8888  nipype/workshops:latest-base jupyter-lab
   ```
 --
 
@@ -323,7 +325,8 @@ layout: false
 
 ```bash
 # you can use various host port number
-$ docker run -it --rm -p 9999:8888 -v nipype/workshops:latest-base jupyter-lab
+$ docker run -it --rm -p 9999:8888 -v LocalDirectory:/src nipype/workshops:latest-base jupyter-lab
+```
 
 ---
 ### <span style="color:purple">Docker and Singularity</span>
@@ -340,6 +343,9 @@ $ docker run -it --rm -p 9999:8888 -v nipype/workshops:latest-base jupyter-lab
   - a user inside a Singularity container is the same user as outside the container
   - but you can use Vagrant to create a container (you have root privileges on your VM!)
   - can run (and modify!) existing Docker containers
+  ```bash
+  sudo singularity shell --writable <repository>
+  ```
   - running VM is required on OSX
   - [Satra's presentation](http://satra.cogitatum.org/om-images/)
   - [other tutorials](http://singularity.lbl.gov/tutorials)
