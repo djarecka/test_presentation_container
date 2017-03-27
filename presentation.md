@@ -24,11 +24,11 @@ class: center, middle, inverse
 ---
 layout: false
 
-- Why do we use containers?
+- ### Why do we use containers?
 
-- What are the various types of container based environments?
+- ### What are the various types of container based environments?
 
-- How to use Docker?
+- #### How to use Docker?
 
 ---
 name: inverse
@@ -60,7 +60,6 @@ layout: false
 
 ### <span style="color:purple">Container technologies</span>
 
-Container technologies:
 
 &nbsp;
 
