@@ -24,11 +24,11 @@ class: center, middle, inverse
 ---
 layout: false
 
-- Why do we use containers
+- Why do we use containers?
 
-- What are the various types of container based environments
+- What are the various types of container based environments?
 
-- How to use Docker
+- How to use Docker?
 
 ---
 name: inverse
@@ -54,12 +54,30 @@ layout: true
 class: center, middle, inverse
 ---
 ## Introduction
+
 ---
 layout: false
 
+### <span style="color:purple">Container technologies</span>
+
+Container technologies:
+
+&nbsp;
+
+- ### isolate the computing environment
+
+&nbsp;
+
+- ### provide a mechanism to encapsulate environments in a self-contained unit that can run anywhere.
+
+---
+
 ### <span style="color:purple">Why do we need containers?</span>
 
+--
+
 ### Science Reproducibility
+
 --
 
   - Each project in a lab depends on complex software environments
@@ -79,7 +97,6 @@ layout: false
 --
 
 ### Collaboration with your colleagues
---
 
 - Sharing your code or using a repository might not be enough
 &nbsp;
@@ -115,13 +132,7 @@ class: center, middle, inverse
 ---
 layout: false
 
-### <span style="color:purple">Virtual Machines and Container Technologies</span>
-
-- Main idea -- isolate the computing environment
-    - Allow regenerating computing environments
-    - Allow sharing your computing environments
-
---
+### <span style="color:purple">Virtual Machines and Containers</span>
 
 - Two main types:
 
@@ -135,10 +146,15 @@ layout: false
 
       - Docker
       - Singularity
+&nbsp;
 
 --
 
-- The details differ (and matter depending on application)
+- Main idea -- isolate the computing environment
+
+  - Allow regenerating computing environments
+  - Allow sharing your computing environments
+
 
 ---
 ### <span style="color:purple">Virtual Machines vs Containers</span>
@@ -159,7 +175,7 @@ layout: false
 
 
 
-   **Containers**
+   **Docker containers**
   - share the host system’s kernel with other containers
   - each container gets its own isolated user space
   - only bins and libs are created from scratch
@@ -286,7 +302,7 @@ layout: false
 
 - More about the Dockerfile syntax you can find [here](https://docs.docker.com/engine/reference/builder/#from)
 
-- Example of Dockerfile to run Nipyp wokflow from [Docker Hub](https://hub.docker.com/r/miykael/nipype_level0/~/dockerfile/)
+- Example of Dockerfile to run Nipype workflow from [Docker Hub](https://hub.docker.com/r/miykael/nipype_level0/~/dockerfile/)
 ---
 ### <span style="color:purple">Docker and Nipype</span>
 
