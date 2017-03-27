@@ -26,9 +26,13 @@ layout: false
 
 - ### Why do we use containers?
 
+&nbsp;
+
 - ### What are the various types of container based environments?
 
-- #### How to use Docker?
+&nbsp;
+
+- ### How to use Docker?
 
 ---
 name: inverse
@@ -63,11 +67,11 @@ layout: false
 
 &nbsp;
 
-- ### isolate the computing environment
+- ### Isolate the computing environments
 
 &nbsp;
 
-- ### provide a mechanism to encapsulate environments in a self-contained unit that can run anywhere.
+- ### Provide a mechanism to encapsulate environments in a self-contained unit that can run anywhere
 
 ---
 
