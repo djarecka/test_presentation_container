@@ -315,8 +315,6 @@ layout: false
   $ docker images
   # only if you haven't done it already
   $ docker pull nipype/workshops:latest-base
-  # or
-  $ docker pull rig.mit.edu:5000/workshop/base
   $ docker run -it --rm nipype/workshops:latest-base bash
   ```
 
